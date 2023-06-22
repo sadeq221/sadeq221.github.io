@@ -1,0 +1,29 @@
+@font-face {
+    font-family: orbitron;
+    src: url(/Orbitron-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: #36120a;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #373737;
+    border-radius: 50px;
+    width: 90%;
+    max-width: 400px;
+    min-width: 340px;
+    height: 100px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: orbitron;
+    background-color: blue;
+}

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #373737;
+    background-color: #13795b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktopOnly {
+    display: none;
+    background-color: #d2f4ea;
+    font-size: 25px;
+    width: 400px;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 100px auto;
+}
+
+@media only screen and (max-width: 900px) {
+    #container {
+        display: none;
+    }
+
+    .desktopOnly {
+        display: block;
+        background-color: #d2f4ea;
+    }
+}
+
+
+#letHimChoose {
+    position: absolute;
+    top: calc(30% - 105px);
+    left: calc(50% - 250px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 210px;
+    border-radius: 40px;
+    background-color: #d2f4ea;
+    text-align: center;
+    z-index: 1;
+}
+
+#letHimChoose h1 {
+    margin-top: 20px;
+}
+
+#letHimChoose h2 {
+    margin-top: 20px;
+}
+
+.chooseBtn {
+    display: inline-block;
+    border: 1px solid #13795b;
+    width: 120px;
+    height: 50px;
+    margin: 20px 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: #d2f4ea;
+}
+
+.chooseBtn:hover {
+    background-color: #20c9965e;
+}
+
+#container {
+    position: relative;
+    width: 95%;
+    height: 100vh;
+    padding: 0 20px;
+    background-color: #13795b;
+}
+
+.mark {
+    position: absolute;
+    top: 50px;
+    color: #fff;
+    font-size: 60px;
+}
+
+#userMark {
+    left: 300px;
+}
+
+#systemMark {
+    right: 300px;
+}
+
+.paddle {
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: calc(50% - 45px);
+    width: 30px;
+    height: 120px;
+    background-color: #fff;
+}
+
+.paddle span {
+    font-weight: 700;
+    color: #13795b;
+}
+
+#rightPaddle span {
+    font-weight: 900;
+    font-size: 23px;
+}
+
+#leftPaddle {
+    left: 20px;
+}
+
+#rightPaddle {
+    right: 20px;
+}
+
+#net {
+    position: absolute;
+    top: 5%;
+    left: calc(50% - 8px);
+    height: 90%;
+    border: 4px dashed #fff;
+    /* background-color: #fff; */
+}
+
+#ball {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 19px);
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+}

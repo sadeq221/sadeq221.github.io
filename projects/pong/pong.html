@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pong</title>
+    <link rel="stylesheet" href="/projects/pong/pong.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="/projects/pong/jQueryColor.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="letHimChoose">
+        <h1>Hello Dear Friend,</h1>
+        <h2>First, Choose whom you want to play with</h2>
+        <div>
+          <button class="chooseBtn" id="friendly">Friendly</button>
+          <button class="chooseBtn" id="system">System</button>
+        </div>
+      </div>
+      <span class="mark" id="userMark">0</span>
+      <span class="mark" id="systemMark">0</span>
+      <div class="paddle" id="leftPaddle">
+        <span>W</span>
+        <span>S</span>
+      </div>
+      <div id="net"></div>
+      <div class="paddle" id="rightPaddle">
+        <span>↑</span>
+        <span>↓</span>
+      </div>
+      <div id="ball"></div>
+    </div>
+    <div class="desktopOnly">
+      This game is designed for desktop. <br />
+      Mobile version is coming soon ...
+    </div>
+
+    <script src="/projects/pong/pong.js"></script>
+  </body>
+</html>
